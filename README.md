@@ -37,3 +37,8 @@ What features will your project have? Think back to your answer to the question 
 Project Description
 Please describe your project!
 -My project will feature clickable images of the astrology signs and once they are clicked, they will direct the user to their horoscope based off their particular astrology sign.
+
+# Mockups:
+![my mockup homepage](https://github.com/amandar8/Astrology-FirstProject/blob/master/images/Screen%20Shot%202018-05-25%20at%202.56.31%20PM.png)
+
+![my mockup secondary page](https://github.com/amandar8/Astrology-FirstProject/blob/master/images/Screen%20Shot%202018-05-25%20at%202.56.48%20PM.png)
