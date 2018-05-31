@@ -1,12 +1,14 @@
 <html lang="en-us">
 
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <!-- <link rel="shortcut icon" href="image/favicon.ico" type="favicon.ico"> -->
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+
   <title>Astrology</title>
 </head>
 
@@ -22,98 +24,102 @@
       <ul id="signList" class="signList">
 
         <li id="moon" class="menuIcon">
-          <a href="#">
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
       <img class="tooltipped" data-position="top" data-tooltip="Find your Sign" id="moon" src="images/moon.svg">
     </a>
         </li>
 
         <li id="aquarius" class="signIcon">
-          <a href="#">
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" data-position="top" data-tooltip="aquarius" src="images/aquarius.svg">
   </a>
         </li>
 
         <li id="pisces" class="signIcon">
-          <a href="#">
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" data-position="top" data-tooltip="pisces" src="images/pisces.svg">
   </a>
         </li>
 
         <li id="aries" class="signIcon">
-          <a href="#">
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" data-position="top" data-tooltip="Aries" src="images/aries.svg">
   </a>
         </li>
 
         <li id="taurus" class="signIcon">
-          <a href="#">
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" data-position="top" data-tooltip="taurus" src="images/taurus.svg">
   </a>
         </li>
 
         <li id="gemini" class="signIcon">
-          <a href="#">
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" data-position="top" data-tooltip="gemini" src="images/gemini.svg">
   </a>
         </li>
 
         <li id="cancer" class="signIcon">
-          <a href="#">
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" data-position="top" data-tooltip="cancer" src="images/cancer.svg">
   </a>
         </li>
 
         <li id="leo" class="signIcon">
-          <a href="#">
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" data-position="top" data-tooltip="leo" src="images/leo.svg">
   </a>
         </li>
 
         <li id="virgo" class="signIcon">
-          <a href="#">
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" data-position="top" data-tooltip="virgo" src="images/virgo.svg">
   </a>
         </li>
 
         <li id="libra" class="signIcon">
-          <a href="#">
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" data-position="top" data-tooltip="libra" src="images/libra.svg">
   </a>
         </li>
 
         <li id="scorpio" class="signIcon">
-          <a href="#">
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" data-position="top" data-tooltip="scorpio" src="images/scorpio.svg">
   </a>
         </li>
 
         <li id="sagittarius" class="signIcon">
-          <a href="#">
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" data-position="top" data-tooltip="sagittarius" src="images/sagittarius.svg">
   </a>
         </li>
 
         <li id="capricorn" class="signIcon">
-          <a href="#">
-    <img class="signImage" data-position="top" data-tooltip="capricorn" src="images/capricorn.svg">
-  </a>
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
+
+    <img class="signImage" data-position="top" data-tooltip="capricorn" src="images/capricorn.svg"></img>
+          </a>
         </li>
 
       </ul>
 
-      <section id="horoBox" class="horoBox">
-        <section id="horoContent" class="horoContent">Loading..</div>
-
-          <section id="apodContent" class="apodContent">
-            <section id="imageWrapper" class="imageWrapper">
-
-            </section>
-          </section>
-        </section>
-      </section>
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4 id="title">Modal Header</h4>
+          <p id="para">A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>
+      <!-- <section id="horoBox" class="horoBox">
+        <section id="horoContent" class="horoContent">Loading..</section>
+      </section> -->
 
       <script defer src="js/script.js"></script>
-      <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 </body>
