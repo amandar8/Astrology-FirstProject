@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-
-
   // function to create cirle of icons
   let type = 1, //circle type - 1 whole, 0.5 half, 0.25 quarter
     radius = '12em', //distance from center
@@ -20,8 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-
-
   let astroSign = document.getElementsByClassName('signIcon')
 
   // this creates an array of elements instead of an html collection
@@ -30,6 +26,29 @@ document.addEventListener('DOMContentLoaded', function() {
     astroSignButton.addEventListener('click', astroSignButtonPressed)
   });
 
+// document.getElementById('popUp').addEventListener('mouseenter', function(event){
+//   event.target.addEventListener('mouseleave', function(event){
+//       event.target.classList.add
+//   });
+// })
+
+// create mouseover and mouseout effect when scrolling over icon
+  for (let i = 0; i < astroSign.length; i++) {
+      astroSign[i].addEventListener('mouseover', mouseOverEffect);
+      astroSign[i].addEventListener('mouseout', mouseOutEffect);
+  }
+
+// mouseover effect that changes astro name font
+  function mouseOverEffect() {
+    this.classList.add("astroSign-highlight");
+  }
+
+// removes astro name font
+  function mouseOutEffect() {
+    this.classList.remove("astroSign-highlight");
+  }
+
+// function that creates modals when each zodiac icon is clicked
   function astroSignButtonPressed(event) {
     let zodiacSign = this.id;
     console.log('Zodiac Sign:', zodiacSign);
@@ -53,42 +72,17 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log('Horoscope Data:', data)
 
       let horoName = document.getElementById(zodiacSign);
-      // title.innerHTML = "Loading...";
-      // para.innerHTML = "";
-      // //
-      // let modal1 = document.createElement("div");
-      // modal1.classList.add('modal');
-      // horoName.appendChild(modal1);
-      //
-      // let modalContent = document.createElement("div");
-      // modalContent.classList.add('modal-content');
-      // modal1.appendChild(modalContent);
-      //
-      // let title = document.createElement("h4");
+
       title.innerHTML = zodiacSign;
       para.innerHTML = data.horoscope;
-      //
-      // let para = document.createElement("p");
-      // para.innerHTML = data.horoscope;
-      // modalContent.appendChild(para);
-      //
-      // let el = document.querySelector(`a`);
-      // el.href = "#modal1";
-      // el.classList.add('waves-effect waves-light modal-trigger');
-
-
 
     })
 
       .catch(error => console.log(error));
 
-
-
-
   }
 
   let elems = document.querySelectorAll('.modal');
   let instances = M.Modal.init(elems);
-  // title.innerHTML = "Loading...";
-  // para.innerHTML = "";
+
 });
