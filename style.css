@@ -6,7 +6,7 @@ body {
   background: url("images/astrology_img.jpg");
   background-size: cover;
   background-position: center bottom;
-  /* height: 100vh; */
+  height: 100%;
   width: 100vw;
 }
 
