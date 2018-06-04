@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width = device-width, initial-scale = 1">
-  <link rel="icon" type="image/png" href="/images/favicon.ico">
+  <!-- <link rel="icon" type="image/png" href="/images/favicon.ico"> -->
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
@@ -21,89 +21,99 @@
   <section id="background" class="background">
 
     <section class="topHeader">
-      <h1 id="welcomeHeader" class="welcomeHeader">Select Your Sign</h1>
+      <nav class="transparent z-depth-0">
+        <section id= "nav-wrapper" class="nav-wrapper">
+          <h1 id="welcomeHeader" class="welcomeHeader">Select Your Sign</h1>
+
+              <a class="button" href="create-account">Create an Account</a>
+
+
+              <a class="button" href="sign-in">Sign In</a>
+
+        </section>
+      </nav>
     </section>
 
-    <section class="mainPage">
+    <section id="mainPage" class="mainPage">
       <ul id="signList" class="signList">
 
-          <li id="moon" class="menuIcon">
-            <a class="waves-effect waves-light modal-trigger" href="#modal1">
+        <li id="moon" class="menuIcon">
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
             <img class="moonImg" id="moon" src="images/moon.svg">
             </a>
-          </li>
+        </li>
 
-          <li id="aquarius" class="signIcon">Aquarius
-            <a class="waves-effect waves-light modal-trigger" href="#modal1">
+        <li id="aquarius" class="signIcon">Aquarius
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" src="images/aquarius.svg">
   </a>
-          </li>
+        </li>
 
-          <li id="pisces" class="signIcon">Pisces
-            <a class="waves-effect waves-light modal-trigger" href="#modal1">
+        <li id="pisces" class="signIcon">Pisces
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" src="images/pisces.svg">
   </a>
-          </li>
+        </li>
 
-          <li id="aries" class="signIcon">Aries
-            <a class="waves-effect waves-light modal-trigger" href="#modal1">
+        <li id="aries" class="signIcon">Aries
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" src="images/aries.svg">
   </a>
-          </li>
+        </li>
 
-          <li id="taurus" class="signIcon">Taurus
-            <a class="waves-effect waves-light modal-trigger" href="#modal1">
+        <li id="taurus" class="signIcon">Taurus
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" src="images/taurus.svg">
   </a>
-          </li>
+        </li>
 
-          <li id="gemini" class="signIcon">Gemini
-            <a class="waves-effect waves-light modal-trigger" href="#modal1">
+        <li id="gemini" class="signIcon">Gemini
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" src="images/gemini.svg">
   </a>
-          </li>
+        </li>
 
-          <li id="cancer" class="signIcon">Cancer
-            <a class="waves-effect waves-light modal-trigger" href="#modal1">
+        <li id="cancer" class="signIcon">Cancer
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" src="images/cancer.svg">
   </a>
-          </li>
+        </li>
 
-          <li id="leo" class="signIcon">Leo
-            <a class="waves-effect waves-light modal-trigger" href="#modal1">
+        <li id="leo" class="signIcon">Leo
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage tooltipped" src="images/leo.svg">
   </a>
-          </li>
+        </li>
 
-          <li id="virgo" class="signIcon">Virgo
-            <a class="waves-effect waves-light modal-trigger" href="#modal1">
+        <li id="virgo" class="signIcon">Virgo
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" src="images/virgo.svg">
   </a>
-          </li>
+        </li>
 
-          <li id="libra" class="signIcon">Libra
-            <a class="waves-effect waves-light modal-trigger" href="#modal1">
+        <li id="libra" class="signIcon">Libra
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" src="images/libra.svg">
   </a>
-          </li>
+        </li>
 
-          <li id="scorpio" class="signIcon">Scorpio
-            <a class="waves-effect waves-light modal-trigger" href="#modal1">
+        <li id="scorpio" class="signIcon">Scorpio
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" src="images/scorpio.svg">
   </a>
-          </li>
+        </li>
 
-          <li id="sagittarius" class="signIcon">Sagittarius
-            <a class="waves-effect waves-light modal-trigger" href="#modal1">
+        <li id="sagittarius" class="signIcon">Sagittarius
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" src="images/sagittarius.svg">
   </a>
-          </li>
+        </li>
 
-          <li id="capricorn" class="signIcon">Capricorn
-            <a class="waves-effect waves-light modal-trigger" href="#modal1">
+        <li id="capricorn" class="signIcon">Capricorn
+          <a class="waves-effect waves-light modal-trigger" href="#modal1">
     <img class="signImage" src="images/capricorn.svg">
   </a>
-          </li>
+        </li>
       </ul>
 
       <div id="modal1" class="modal">

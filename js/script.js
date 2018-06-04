@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     radius = '12em', //distance from center
     start = -90, //shift start from 0
     elements = $('li:not(:first-child)'), //puts first li element in center of circle
-    numberOfElements = (type === 1) ? elements.length : elements.length - 1, //adj for even distro of elements when not full circle
+    numberOfElements = (type === 1) ? elements.length : elements.length - 1, //adjusts for even distribution of elements when not full circle
     slice = 360 * type / numberOfElements;
 
   elements.each(function(i) {

@@ -6,29 +6,37 @@ body {
   background: url("images/astrology_img.jpg");
   background-size: cover;
   background-position: center bottom;
-  height: 100%;
+  /* height: 700vh; */
   width: 100vw;
 }
 
-.topHeader {
-  display: flex;
-  justify-content: center;
-}
-
 .welcomeHeader {
-  display: flex;
+  /* display: flex; */
   color: white;
-  justify-content: center;
-  /* position: absolute; */
+  /* justify-content: center; */
+  position: absolute;
   /* left: 50%; */
   text-decoration: none;
   font-family: fantasy;
   font-weight: bold;
-  font-size: 70px;
-  width: 100%;
-  padding-top: 50px;
+  /* font-size: 70px; */
+  /* width: 100%; */
+  left: 50vw;
+  transform: translate(-50%, 0);
 }
 
+.button:hover {
+  transform: scale(1.3);
+}
+
+.nav-wrapper{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button{
+  margin-right: 40px;
+}
 .signList {
   /* display: flex; */
   position: absolute;
@@ -45,19 +53,11 @@ body {
 .mainPage{
   display: flex;
   width: 100%;
-  height: 600px;
+  height: 100vh;
 }
 
-/* .iconContainer{
-  display: flex;
-  width: 50;
-} */
-
 li {
-  /* display: flex; */
   position:absolute;
-  -webkit-transition: all 2s linear;
-  -moz-transition: all 2s linear;
   transition: all 2s linear;
 }
 
@@ -79,7 +79,6 @@ li {
 }
 
 .astroSign-highlight {
-  /* opacity: 0.6; */
+  /* opacity: 0.1; */
   font-style:oblique;
-
 }
